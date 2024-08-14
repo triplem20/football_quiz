@@ -5,6 +5,29 @@ class QuizThinker{
   int _questionNumber= 0;
   int _questionPath = 0;
 
+
+  List<Question> _ucl = [
+    Question(questionText: 'The UEFA Champions League was originally called the European Cup.', questionAnswer: true),
+    Question(questionText: 'Real Madrid has won the most UEFA Champions League titles.', questionAnswer: true),
+    Question(questionText: 'The UEFA Champions League final is always played at the home stadium of one of the finalists.', questionAnswer: false),
+    Question(questionText: 'The competition is open to football clubs from all UEFA member associations.', questionAnswer: true),
+    Question(questionText: 'No English club has ever won the UEFA Champions League.', questionAnswer: false),
+    Question(questionText: 'The group stage of the UEFA Champions League consists of 16 groups.', questionAnswer: false),
+    Question(questionText: 'The UEFA Champions League anthem is officially titled "Zadok the Priest."', questionAnswer: false),
+    Question(questionText: 'Lionel Messi has scored the most goals in UEFA Champions League history.', questionAnswer: false),
+    Question(questionText: 'The UEFA Champions League final has never ended in a penalty shootout.', questionAnswer: false),
+    Question(questionText: 'The current format of the UEFA Champions League with a group stage and knockout rounds was introduced in 1992.', questionAnswer: true),
+    Question(questionText: 'The UEFA Champions League trophy is known as the "Big Ears" due to its shape.', questionAnswer: true),
+    Question(questionText: 'AC Milan has won more UEFA Champions League titles than Barcelona.', questionAnswer: true),
+    Question(questionText: 'The UEFA Champions League final has always been played on a Saturday.', questionAnswer: false),
+    Question(questionText: 'Chelsea won their first UEFA Champions League title in 2008.', questionAnswer: false),  // They won it in 2012
+    Question(questionText: 'No club has ever won the UEFA Champions League three times in a row.', questionAnswer: false),  // Real Madrid did it from 2016 to 2018
+    Question(questionText: 'The first ever UEFA Champions League final was won by Marseille.', questionAnswer: true),
+    Question(questionText: 'The UEFA Champions League allows a maximum of five substitutions per team during a match.', questionAnswer: true),
+    Question(questionText: 'Cristiano Ronaldo has scored the most hat-tricks in UEFA Champions League history.', questionAnswer: true),
+    Question(questionText: 'The 2020 UEFA Champions League final was played without spectators due to the COVID-19 pandemic.', questionAnswer: true),
+    Question(questionText: 'The fastest goal in UEFA Champions League history was scored within 10 seconds.', questionAnswer: true),  // Roy Makaay scored in 10.12 seconds in 2007
+  ];
   List<Question> _general=[
 
     Question(questionText: 'The FIFA World Cup is held every four years.',questionAnswer:  true),
@@ -54,30 +77,6 @@ class QuizThinker{
         questionText: 'In football, the term "nutmeg" refers to a player dribbling the ball between an opponent\'s legs.',
         questionAnswer: true),
   ];
-
-  List<Question> _ucl = [
-    Question(questionText: 'The UEFA Champions League was originally called the European Cup.', questionAnswer: true),
-    Question(questionText: 'Real Madrid has won the most UEFA Champions League titles.', questionAnswer: true),
-    Question(questionText: 'The UEFA Champions League final is always played at the home stadium of one of the finalists.', questionAnswer: false),
-    Question(questionText: 'The competition is open to football clubs from all UEFA member associations.', questionAnswer: true),
-    Question(questionText: 'No English club has ever won the UEFA Champions League.', questionAnswer: false),
-    Question(questionText: 'The group stage of the UEFA Champions League consists of 16 groups.', questionAnswer: false),
-    Question(questionText: 'The UEFA Champions League anthem is officially titled "Zadok the Priest."', questionAnswer: false),
-    Question(questionText: 'Lionel Messi has scored the most goals in UEFA Champions League history.', questionAnswer: false),
-    Question(questionText: 'The UEFA Champions League final has never ended in a penalty shootout.', questionAnswer: false),
-    Question(questionText: 'The current format of the UEFA Champions League with a group stage and knockout rounds was introduced in 1992.', questionAnswer: true),
-    Question(questionText: 'The UEFA Champions League trophy is known as the "Big Ears" due to its shape.', questionAnswer: true),
-    Question(questionText: 'AC Milan has won more UEFA Champions League titles than Barcelona.', questionAnswer: true),
-    Question(questionText: 'The UEFA Champions League final has always been played on a Saturday.', questionAnswer: false),
-    Question(questionText: 'Chelsea won their first UEFA Champions League title in 2008.', questionAnswer: false),  // They won it in 2012
-    Question(questionText: 'No club has ever won the UEFA Champions League three times in a row.', questionAnswer: false),  // Real Madrid did it from 2016 to 2018
-    Question(questionText: 'The first ever UEFA Champions League final was won by Marseille.', questionAnswer: true),
-    Question(questionText: 'The UEFA Champions League allows a maximum of five substitutions per team during a match.', questionAnswer: true),
-    Question(questionText: 'Cristiano Ronaldo has scored the most hat-tricks in UEFA Champions League history.', questionAnswer: true),
-    Question(questionText: 'The 2020 UEFA Champions League final was played without spectators due to the COVID-19 pandemic.', questionAnswer: true),
-    Question(questionText: 'The fastest goal in UEFA Champions League history was scored within 10 seconds.', questionAnswer: true),  // Roy Makaay scored in 10.12 seconds in 2007
-  ];
-
   List<Question> _pl=[
 
     Question(questionText: 'The Premier League was founded in 1992.', questionAnswer: true),
@@ -101,6 +100,29 @@ class QuizThinker{
     Question(questionText: 'Tottenham Hotspur won the first Premier League title.', questionAnswer: false),  // Manchester United won the first title
     Question(questionText: 'The Premier League introduced a winter break for the first time in the 2019-2020 season.', questionAnswer: true),
   ];
+  List<Question> _liga = [
+    Question(questionText: 'Real Madrid has won the most La Liga titles.', questionAnswer: true),
+    Question(questionText: 'Barcelona is the only team to have won the treble in La Liga history.', questionAnswer: false),  // Real Madrid has also achieved this
+    Question(questionText: 'The La Liga season runs from August to May.', questionAnswer: true),
+    Question(questionText: 'Atletico Madrid has never won a La Liga title.', questionAnswer: false),  // Atletico Madrid has won La Liga titles
+    Question(questionText: 'The La Liga trophy is known as "La Copa del Rey."', questionAnswer: false),  // The Copa del Rey is a separate cup competition
+    Question(questionText: 'The highest-scoring player in La Liga history is Cristiano Ronaldo.', questionAnswer: true),
+    Question(questionText: 'Real Sociedad is a team from the Basque Country that has won La Liga.', questionAnswer: true),
+    Question(questionText: 'La Liga has 22 teams competing each season.', questionAnswer: false),  // There are 20 teams
+    Question(questionText: 'The top four teams in La Liga qualify for the UEFA Champions League.', questionAnswer: true),
+    Question(questionText: 'The "Clásico" refers to the match between Real Madrid and Atlético Madrid.', questionAnswer: false),  // It refers to the match between Real Madrid and Barcelona
+    Question(questionText: 'La Liga was founded in 1929.', questionAnswer: true),
+    Question(questionText: 'The top scorer of a single La Liga season holds the record with 50 goals.', questionAnswer: true),  // Cristiano Ronaldo set this record in the 2010-2011 season
+    Question(questionText: 'La Liga matches are played in a round-robin format.', questionAnswer: true),
+    Question(questionText: 'Each La Liga team plays 42 matches in a season.', questionAnswer: false),  // Each team plays 38 matches
+    Question(questionText: 'Real Madrid\'s home stadium is called Camp Nou.', questionAnswer: false),  // Camp Nou is the home stadium of Barcelona
+    Question(questionText: 'The player with the most appearances in La Liga history is Iker Casillas.', questionAnswer: false),  // The record is held by Andoni Zubizarreta
+    Question(questionText: 'La Liga is considered one of the top four European domestic leagues.', questionAnswer: true),
+    Question(questionText: 'The La Liga season typically begins in July.', questionAnswer: false),  // It begins in August
+    Question(questionText: 'Valencia has won La Liga more times than Sevilla.', questionAnswer: true),
+    Question(questionText: 'La Liga has implemented VAR (Video Assistant Referee) since the 2017-2018 season.', questionAnswer: true),
+  ];
+
 
   void nextQuestion(){
     if(_questionNumber < _getCurrentQuestionType().length - 1 ){
@@ -134,10 +156,12 @@ class QuizThinker{
 
   List<Question> _getCurrentQuestionType() {
     switch (_questionPath) {
-      case 1:
+      case 0:
         return _ucl;
-      case 2:
+      case 1:
         return _general;
+      case 2:
+        return _liga;
       default:
         return _pl;
     }
